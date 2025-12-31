@@ -1,0 +1,36 @@
+/* int angka = 5;
+float desimal = 5.99f;
+char huruf = 'D';
+boolean keadaan = true;
+String kata = "Hello"; */
+
+contoh 
+
+int angka = 10;
+System.out.println(angka);
+output = 10
+
+float desimal = 21.8f;
+System.out.println(desimal);
+output = 21.8
+
+char huruf = 'D';
+System.out.println(huruf);
+output = D
+
+boolean keadaan = true;
+boolean sakit = false;
+System.out.println(keadaan);
+output = true
+
+String kata = "Halo Dek";
+System.out.println(kata);
+
+
+setiap mau ngeprint harus ada code dibawah ini
+public class Main [
+  public static void main(String[] args) {
+    int angka = 10;
+    System.out.println(angka);
+  }
+}
