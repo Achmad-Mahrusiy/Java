@@ -1,0 +1,30 @@
+Ada dua type casting yaitu Widening casting dan narrowing casting.
+
+widening casting itu mengubah tipe data secara otomatis. 
+
+widening casting mengubah satu data dari yang terkecil sampai yang terbesar,
+tipe datanya = byte --> short --> char --> int --> long --> float --> double.
+
+contoh dari Widening casting = 
+
+int awal = 8;
+double dua = awal; //otomatis mengubah tipe data dari int ke double
+
+System.out.println(awal);  //output 8
+System.out.println(dua);  //output 8.0 
+
+
+
+Narrowing casting itu mengubah tipe data secara manual.
+
+tadi kan widening secara otomatis dan dimulai dari terkecil sampai terbesar, 
+sekarang Narrowing itu secara manual dan mengubah tipe data dari yang terbesar sampai ke yang terkecil.
+tipe datanya = double --> float --> long --> int --> char --> short --> byte.
+
+contoh dari Narrowing casting = 
+
+double awal = 8.22d;
+int dua = (int) awal;  //manual casting: double ke int
+
+System.out.println(awal);  //output 8.22
+System.out.println(dua);  //output 8
