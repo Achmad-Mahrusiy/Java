@@ -1,4 +1,5 @@
-/* ini adalah tanda comment */
+/* ini adalah tanda comment panjang*/
+//ini juga tanda untuk comment tapi sedikit
 
 /* int angka = 5;
 float desimal = 5.99f;
