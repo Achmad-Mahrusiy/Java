@@ -1,5 +1,16 @@
+/*ini adalah tanda comment*/
+
 public class Main {
   public static void main(String[] args) {
     System.out.println("Hello World");
   }
 }
+
+
+/*public penting agar Java Virtual Machine (JVM) bisa menemukan suatu program dan menjalankannya.*/
+/*class adalah kelas dari suatu program yang mau dijalankan*/
+/*main adalah nama kelas dari program yang dipilih dan dijalankan*/
+
+/*static memungkinkan memanggil suatu program secara langsung tanpa perlu membuat objek dari kelas tersebut*/
+/*void menunjukkan bahwa metode ini tidak mengembalikkan nilai apapun*/
+/*String[] args: adalah parameter untuk menerima argumen yang diberikan melalui baris perintah saat program dijalankan*/
