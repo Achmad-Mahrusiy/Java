@@ -28,7 +28,7 @@ System.out.println(kata);
 
 
 setiap mau ngeprint harus ada code dibawah ini
-public class Main [
+public class Main {
   public static void main(String[] args) {
     int angka = 10;
     System.out.println(angka);
