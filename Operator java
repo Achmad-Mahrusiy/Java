@@ -1,0 +1,112 @@
+
+java memiliki 5 operator yaitu arithmetic, Assignment, Comparison, Logical, Bitwise.
+
+
+yang pertama adalah operator arithmetic / aritmatika yang digunakan untuk melakukan operasi matematika dasar pada tipe numerik.
+operator arithmetic / aritmatika memiliki 7 bagian matematika dasar yaitu addition ( + ), Subtraction ( - ), Multiplication ( * ),
+Division ( / ), Modulus ( % ), Increment ( ++ ), dan yang terakhir adalah Decrement ( -- ).
+
+contoh operator arithmetic :
+
+public class Main {
+  public static void main(String[] args) {
+    int x = 8
+    int y = 4
+
+    System.out.println(x + y);  //output 12
+    System.out.println(x - y);  //output 4
+    System.out.println(x * y);  //output 32
+    System.out.println(x / y);  //output 2
+    System.out.println(x % y);  //output 0 
+
+    int z = 2;
+    ++z;
+    System.out.println(z); //output 3
+    --z;
+    System.out.println(z); //output 2
+  }
+}
+
+
+yang kedua adalah operator Assignment yang digunakan untuk menetapkan nilai ke variabel.
+operator ini dibagi menjadi dua jenis  yaitu simple dan compound assignment operator. 
+operator biasanya menggunakan sama dengan ( = ), dan ada yang lain yaitu 
+( += ), ( -= ), ( *= ), ( /= ), ( %= ), ( &= ), ( |= ), ( ^= ), ( >>= ),dan yang terkahir ( <<= )
+
+berikut contoh operator asssignment :
+
+public class Main {
+  public static void main(String[] args) {
+    int tabungan = 100;
+    tabungan += 60;  //tabungan bertambah 60
+    System.out.println("Total tabungan anda sebesar " + tabungan)
+  }
+}
+
+
+yang ketiga adalah operator comparison yang digunakan untuk membandingkan dua nilai 
+dan mengembalikan boolean result ( true or false ). operator ini sangat penting untuk 
+mengontrol alur sebuah program dalam pernyataan kondisional dan loops.
+
+comparison operator memiliki 7 bagian operator lain yaitu
+Equal to(==), Not equal(!=), Greater than (>), less than(<), Greater than or equal to(>=),
+dan yang terakhir Less than or equal to(<=)
+
+berikut contoh dari comparison operator :
+
+public class Main {
+  public static void main(String[] args) {
+    int x = 6;
+    int y = 3;
+
+    System.out.println(x < y);  //output false , karena 6 lebih besar dari 3
+  }
+}
+
+
+yang keempat adalah logical operator dijava biasanya digunakan untuk menggabungkan atau memodifikasi boolean expressions,
+returning boolean result (true or false). logical operator sangat penting untuk mengontrol alur suatu program 
+dalam pernyataan kondisional dan loops.
+
+logical operator memiliki 3 bagian operator lain yaitu logical and( && ), logical or( || ), dan yang terakhir logical not( ! )
+berikut contoh dari logical operator  :
+
+public class Main {
+  public static void main(String[] args) {
+    boolean aku = true;
+    boolean dia = false;
+
+    System.out.println("pemikiranku " + (aku && !dia));
+    System.out.println("pemikirannya " + (aku || dia));
+    System.out.println("jika digabungkan hasilnya " + (!aku));
+  }
+}
+
+
+dan yang terakhir adalah operator bitwise dalam pemograman java digunakan 
+untuk melakukan operasi pada bit individual dari tipe data integral.(seprrti byte, short, int, dan long).
+operasi ini mengonversi hasilnya kembali ke desimal.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
