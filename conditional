@@ -1,0 +1,54 @@
+conditional statement adalah struktur kontrol yang memungkinakn program untuk membuat keputusan
+dan menjalankan code block yang berbeda berdasarkan konsidi nya
+
+conditional statement ini biasa nya memakau if,if else, dan if-else if. yang berfungsi
+untuk mengontrol alur sebuah program dengan percabangan logika, 
+seperti memeriksa apakah nilai besar dari 10 atau apakah input sama dengan 'A'.
+
+
+contoh conditional statement if :
+  
+public class Main {
+  public static void main(String[] args) {
+    int roti = 4;
+
+    if (roti < 4) {
+      System.out.println("Ga cukup untuk sehari.");
+    }
+  System.out.println("ini juga bisa di taruh dibawah if.");
+  }
+}
+
+
+contoh conditional statement if-else:
+
+public class Main {
+  public static void main(String[] args ) {
+    int time = 19;
+
+    if (time > 19) {
+      System.out.println("Waktunya tidur.");
+    } else {
+      System.out.println("Selamat pagi");
+    }
+  }  
+}
+
+
+contoh conditional statement (if-else if)
+
+public class Main {
+  public static void main(String[] args) {
+    int roti = 4;
+
+    if (roti < 5) {
+      System.out.println("Ga cukup untuk sehari.");
+    } else if (roti < 10) {
+      System.out.println("Lumayan nih buat 2 hari .");
+    } else {
+      System.out.println("Cukup nih buat 4 hari lebih.");
+    }
+  }
+}
+
+
