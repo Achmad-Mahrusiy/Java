@@ -1,0 +1,63 @@
+String dalam bahasa pemograman java adalah sebuah objek yang mewakili urutan karakter.
+berbeda dengan bahasa oemograman lain yang menganggap string sebagai array karakter,
+java memperlakukan String sebagai tipe data referensi(objek) yang bersifat immutable(nilainya tidak dapat diubah setelah dibuat).
+
+terdapat 3 jenis-jenis manipulasi String dan kelas penyusunnya yaitu class String, class Stringbuilder, class Stringbuffer.
+
+yang pertama class string yang paling umum digunakan dalam pemograman java, class string bersifat immutable, artinya 
+setiap kali anda memodifikasi string, java sebenarnya membuat objek string baru di memori.
+
+contohnya :
+
+public class Main {
+  public static void main(String[] args) {
+    String kata = "Halo";
+    kata = kata + "Dunia";
+    System.out.println(kata);
+  }
+}
+
+yang kedua adalah class StringBuilder memiliki sifat mutable(dapat diubah), saat anda menambah atau menghapus karakter,
+perubahan dilakukan pada objek yang sama tanpa membuat objek baru di memori.
+
+contohnya :
+
+public class Main {
+  public static void main(String[] args) {
+
+    StringBuilder sb = new StringBuilder("Program");
+
+    sb.append(" Java");  //append untuk menambahkan teks dibagian akhir
+
+    sb.insert(7, " Dasar");  //insert untuk menyisipkan teks di posisi tertentu
+
+    //sb.reverse();  //membalikkan semua urutan karakter
+
+    System.out.println("Hasil StringBuilder" + sb.toString());
+  }
+}
+
+
+yang ketiga atau yang terkahir adalah class StringBuffer yang bersifat thread-safe atau sinchronized,
+artinya dua thread tidak dapat mengakses metode secara bersamaan,
+sehingga lebih aman namun sedikit lebih lambat dari StringBuilder.
+
+contohnya :
+
+public class Main {
+  public static void main(String[] args) {
+
+    StringBuffer sbf = new StringBuffer("Data");
+
+    sbf.append(" Mahasiswa");
+
+    sbf.replace(0, 4, "List");  //replace digunakan untuk mengganti tex pada rentang indeks tertentu.
+
+    sbf.delete(0, 5);  //delete untuk menghapus karakter
+
+    System.out.println("Hasil StringBuffer: " + sbf.toString());
+
+  }
+
+}
+
