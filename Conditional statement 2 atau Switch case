@@ -1,0 +1,43 @@
+switch case di java adalah struktur percabangan multi-arah yang mengeksekusi blok kdoe tertentu 
+berdasarkan nilai dari suatu ekspresi, berfungsi sebagai alternatif lebih rapi untuk serangkaian if-else if panjang
+terutama untuk memeriksa nilai variabel terhadap banyak konstanta(byte, short, char, int, String, enum)
+dengan `switch` untuk variabel, `case` untuk nilai yang dicocokkan, dan `break` untuk keluar dari block setelah cocok,
+serta `default` untuk kasus tanpa kecocokan
+
+`switch` adalah variabel atau nilai yang akan diperisa.
+`case` menentukan nilai konstan yang akan dibandingkan dengan `switch`. jika cocok, maka kode dibawah akan berjalan.
+`break;` Sangat oenting karena mengakhiri eksekusi `switch` setelah `case` yang cocok ditemukan, tanpa break maka akan jatuh ke `case` lain.
+`default` ini opsional, default menjalankan blok kode jika tidak ada `case` yang cocok, dapat diletakkan dimana saja,
+  jika ada `case` setelahnya, `break` tetap dibutuhkan.
+
+
+Contoh Switch case
+
+`public class Main {`
+`  public static void main(String[] args) {`
+`    int day = 4;`
+`    switch (day) {`
+`      case 1:`
+`        System.out.println("Monday");`
+`        break;`
+`      case 2:`
+`        System.out.println("Tuesday");`
+`        break;`
+`      case 3:`
+`        System.out.println("Wednesday");`
+`        break;`
+`      case 4:`
+`        System.out.println("Thursday");`
+`        break;`
+`      case 5:`
+`        System.out.println("Friday");`
+`        break;`
+`      case 6:`
+`        System.out.println("Saturday");`
+`        break;`
+`      case 7:`
+`        System.out.println("Sunday");`
+`        break;`
+`    }`
+`  }`
+`}`
