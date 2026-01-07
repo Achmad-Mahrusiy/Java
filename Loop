@@ -1,0 +1,35 @@
+`loops` dapat mengeksekusi blok kode yang penting sesuai kondisinya yang true.
+
+`while loop` adalah struktur kontrol perulangan yang menjalankan blok kode berulang kali selama kondisi boolean yang diberikan bernilai `true`.
+mengevaluasi kondisi diawal setiap iterasi; sangat ideal saat jumlah perulangan tidak diketahui sebelumnya, 
+tetapi perlu hati hati agar kondisi tidak menjadi `true` selamanya(infinite loop) dengan memastikan ada pembaruan variabel di dalamnya.
+
+Looping adalah salah satu konsep fundamental dalam pemrograman yang digunakan untuk menjalankan serangkaian perintah
+atau kode secara berulang hingga kondisi tertentu terpenuhi.
+Dengan menggunakannya, kita dapat menghemat waktu dan usaha dalam menulis kode yang harus dijalankan berulang kali,
+terutama ketika jumlah perulangannya banyak atau tidak diketahui sebelumnya.
+
+Looping memungkinkan programmer untuk mengotomatiskan tugas-tugas yang bersifat repetitif.
+Misalnya, Anda ingin mencetak angka 1 hingga 10 di layar. Daripada menulis perintah console.
+log sebanyak 10 kali, Anda cukup menulis kode sederhana dengan menggunakan loop. 
+Selain itu, ia juga membantu meningkatkan efisiensi, meminimalkan kesalahan, dan membuat kode lebih mudah dikelola.
+
+contoh `While loop`
+
+`public class Main {`
+`  public static void main(String[] args) {`
+`    int countdown = 3;`
+
+`    while (countdown > 0) {`
+`      System.out.println(countdown);`
+`      countdown--;`
+`    }`
+
+`    System.out.println("Happy New Year!!");  `
+`  }`
+`}`
+
+
+
+
+
