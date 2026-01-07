@@ -7,6 +7,18 @@ terdapat 3 jenis-jenis manipulasi String dan kelas penyusunnya yaitu class Strin
 yang pertama class string yang paling umum digunakan dalam pemograman java, class string bersifat immutable, artinya 
 setiap kali anda memodifikasi string, java sebenarnya membuat objek string baru di memori.
 
+ada lagi special character di string yaitu 
+
+  \' untuk memasukkan tanda ( ' )kutip tunggal ke dalam string
+  \" untuk memasukkan tanda ( " )kutip ganda ke dalam string
+  \\ untuk memasukkan karakter blackslash literal
+  \n untuk memulai garis baru
+  \t untuk memasukkan spasi tab horizontal
+  \b untuk measukkan karakter blackspace
+  \r untuk mengembalikkan kursor ke awal baris
+  \f untuk memasukkan form feed
+
+
 contohnya :
 
 public class Main {
