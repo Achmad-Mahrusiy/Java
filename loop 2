@@ -1,0 +1,49 @@
+`Do/While loop` adalah sebuah variant dari `while loop`. kode dalam loop ini akan dijalankan terlebih dahulu, 
+setelah dijalankan baru kondisinya akan diperiksa. `do-while loop` sangat cocok digunakan untuk program  yang membutuhkan 
+interaksi pengguna terlebih dahulu, seperti menampilkan menu atau meminta input password, 
+dimana pengecekan baru dilakukan setelah pengguna melakukan tindakan. karena pemeriksaan dilakukan setelah blok kode,
+maka instruksi didalam `do` dijamin akan berjalan setidaknya satu kali, meskipun kondisi awal bernilai `false`.
+
+contoh jika kondisinya itu `false` :
+
+`public class Main {`
+`  public static void main(String[] args) {`
+`    int i = 10;`
+`    do {`
+`      System.out.println("i is " + i);`
+`      i++;`
+`    } while (i < 5);`
+`  }`
+`}`
+
+outputnya adalah "i is 10" karena kondisi dari programnya adalah `false`.
+kode `do` nya yang akan berjalan jika kondisinya `false`. 
+
+contoh jika kondisi programnya benar : 
+
+`public class Main {`
+`  public static void main(String[] args) {`
+`    int i = 0;`
+`    do {`
+`      System.out.println(i);`
+`      i++;`
+`    }`
+`    while (i < 5);  `
+`  }`
+`}`
+
+
+`For loop` adalah jenis perulangan yang paling umum digunakan ketika 
+sudah mengetahui secara pasti berapa kali sebuah blok kdoe harus dijalankan.
+perulangan in sangat efektif untuk mengiterasi rentang angka atau element dalam sebuah array.
+
+contoh for loop
+
+
+
+
+for loop ada 2 yaitu nested for loop / perularangan bersarang dan for-each loop
+
+yang pertama 
+
+
