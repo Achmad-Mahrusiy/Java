@@ -37,13 +37,77 @@ contoh jika kondisi programnya benar :
 sudah mengetahui secara pasti berapa kali sebuah blok kdoe harus dijalankan.
 perulangan in sangat efektif untuk mengiterasi rentang angka atau element dalam sebuah array.
 
-contoh for loop
+contoh for loop yang `True`
 
+`public class Main {`
+`  public static void main(String[] args) {`
+`    for (int i = 5; i > 0; i--) {`
+`      System.out.println(i);`
+`    }`
+`  }`
+`}`
 
+contoh for loop yang `false`, tidak ada output nya
+
+`public class Main {`
+`  public static void main(String[] args) {`
+`    for (int i = 10; i < 5; i++) {`
+`      System.out.println("This will never be printed");`
+`    }`
+`  }`
+`}`
 
 
 for loop ada 2 yaitu nested for loop / perularangan bersarang dan for-each loop
 
-yang pertama 
+yang pertama `Nested Loop`.
+Nested loop adalah sebuah `for` yang berada di dalam blok `for` lainnya. 
+Struktur ini sering digunakan untuk memproses data dua dimensi (seperti tabel atau matriks) atau membuat pola koordinat.
+Setiap satu kali putaran pada outer loop. inner loop akan diselesaikan sepenuhnya dari awal hingga akhir kondisi.
 
+contoh dari Nested Loop :
+
+`public class Main {`
+`  public static void main(String[] args) {`
+`    for (int i = 1; i <= 3; i++) {`
+`      for (int j = 1; j <= 3; j++) {`
+`        System.out.print(i * j + " ");`
+`      }`
+`      System.out.println();`
+`    }`
+`  }`
+`}`
+
+
+yang kedua For-each loop diperkenalkan untuk mempermudah pembacaan kode saat bekerja
+dengan array atau collection (seperti `ArrayList).
+loop ini secara otomatis mengiterasi setiap elemen tanpa perlu menggunakan variabel indeks atau
+mnentukan batas ukuran secara manual.
+
+karakteristik dari For-each loop adalah keamanan yang menghindari kesalahan `ArrayIndexOutRoundsException`, 
+dan juga keterbatasan  tidak bisa digunakan untuk mengubah nilai didalam array asli dan hanya bergerak maju.
+
+contoh `For-each loop`
+
+`public class Main {`
+`  public static void main(String[] args) {`
+    String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};`
+    
+`    for (String car : cars) {`
+`      System.out.println(car);`
+`    }`
+`  }`
+`}`
+
+contoh kedua dari `for-each loop`
+
+`public class Main {`
+`  public static void main(String[] args) {`
+`    int[] numbers = {10, 20, 30, 40};`
+
+`    for (int num : numbers) {`
+`      System.out.println(num);`
+`    }`
+`  }`
+`}`
 
