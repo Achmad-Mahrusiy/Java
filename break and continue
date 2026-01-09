@@ -1,0 +1,42 @@
+`break` dan `continue` di java biasanya digunakan untuk mengelola atau mengontrol aliran eksekusi dalam 
+perulangan(`for`, `while, `do-while`) atau `switch`.
+
+`break` menghentikan perulangan sepenuhnya saat itu juga, keluar dari loop dan melanjutkan eksekusi setelah loop.
+sebaliknya, `continue` hanya melewati iterasi saat ini (melewati kdoe sisa di iterasi tersebut) dan langsung melompat
+ke iterasi berikutnya dari perulangan.
+
+
+`break` digunakan ketika anda menemukan kondisi yang diinginkan dan tidak perlu lagi melanjutkan iterasu lainnya,
+atau saat anda tidak tahu persis berapa banyak iterasi yang dibutuhkan.
+
+contoh dari `break` :
+
+`public class Main {`
+`  public static void main(String[] args) {`
+`    for (int i = 1; i <= 5; i++) {`
+`        if (i == 3) {`
+`            break; `
+`        }`
+`        System.out.println(i); `
+`    }`
+`  }`
+`}`
+
+
+selanjutnya `continue` digunakan  ketika anda ingin "melewati" atau "mengabaikan" iterasi tertentu berdasarkan suatu kondisi,
+tetapi ingin loop tetap berjalan.
+
+contoh `continue` :
+
+
+`public class Main {`
+`  public static void main(String[] args) {`
+`    for (int i = 1; i <= 5; i++) {`
+`        if (i % 2 == 0) {`
+`            continue; // Lewati iterasi saat ini jika i genap`
+`        }`
+`        System.out.println(i); // Akan mencetak 1, 3, 5`
+`    }`
+`  }`
+`}`
+
