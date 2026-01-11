@@ -1,0 +1,94 @@
+`Arrays` di `java` adalah struktur data homogen untuk menyimpan banyak data bertipe sama secara berurutan dalam memori,
+diakses menggunakan indes=ks yang dimulai dari 0, dan memiliki ukuran tetap saat dideklarasikan.
+
+`Arrays` memiliki fitur utama yaitu untuk penyimpanan element sejenis, akses cepat melalui indeks, 
+dan cocok untuk mengelompokkan data terkait, meskipun ukurannya statis.
+
+`arrays` memiliki beberapa jenis yaitu satu dimensi, dua dimensi, multidimensi, dan rangged array.
+
+yang pertama `one` `dimension` `array`, `array` ini memiliki bentuk yang sederhana yang menyerupai `list` linear tunggal,
+data one dimension arrays dapat diakses menggunakan satu indeks yang dimulai dari 0.
+
+contoh dari `one` `dimension` `arrays` :
+
+`public class Main {`
+`  public static void main(String[] args) {`
+`    String[] buah = new String[3]`
+
+`    buah[0] = "Mangga";`
+`    buah[1] = "Apel";`
+`    buah[3] = "Jeruk";`
+`    }:`
+
+`    int[] angka = {10, 20, 30, 40};`
+`    System.out.println(buah[1]);`
+`  }`
+`}`
+
+yang kedua adalah `two` `direction` `array` sering dianalogikan sebagai tabel yang memiliki baris dan kolom(matriks). 
+di `Java`, ini sebenarnya adalah `array` dari `array`.
+
+contoh dari `two` `dimension` `array` :
+
+`public class Main {`
+`  public static void main(String[] args) {`
+`    int[][] matriks = new int[2][3];`
+
+`    int[][] nilai = {`
+`      {20, 85, 90},`
+`      {75, 70, 88}`
+`    };`
+`    System.out.ptintln(nilai[0][2]);`
+`  }`
+`}`
+
+yang ketiga adalah `Array` `Multidimensi`
+java mendukung array dengan lebih dari dua dimensi untuk data yang lebih kompleks, seperti data koordinat ruang(3D) atau volume.
+
+contoh dari `array` `Multidimensi`
+
+`public class Main {`
+`  public static void main(String[] args) {`
+`    int[][][] data3D = new int[2][2][2];`
+`    int[][][] kubus = {`
+`      { {1, 2}, {3, 4} },`
+`      { {5, 6} {7, 8} }`
+`    };`
+`    System.out.println(kubus[1][0][1]);`
+`  }`
+`}`
+
+
+yang terakhir adalah `ragged` `Array` adalah jenis `array` Multidimensi` unik dimana setiap baris dapat memiliki kolom yang berbeda.
+ini dimungkinkan karena Java memperlakukan `array` `Multidimensi` sebagai `array` dari objek `array` yang independen.
+
+contoh dari `Ragged` `array` : 
+
+`public class SistemNilaiRagged {`
+`    public static void main(String[] args) {`
+`        int[][] nilaiMahasiswa = new int[3][];`
+
+`        nilaiMahasiswa[0] = new int[2]; // Mahasiswa A mengambil 2 mata kuliah`
+`        nilaiMahasiswa[1] = new int[4]; // Mahasiswa B mengambil 4 mata kuliah`
+`        nilaiMahasiswa[2] = new int[3]; // Mahasiswa C mengambil 3 mata kuliah`
+
+`        nilaiMahasiswa[0][0] = 85; nilaiMahasiswa[0][1] = 90;`
+
+`        nilaiMahasiswa[1][0] = 70; nilaiMahasiswa[1][1] = 75;`
+`        nilaiMahasiswa[1][2] = 80; nilaiMahasiswa[1][3] = 88;`
+
+`        nilaiMahasiswa[2][0] = 95; nilaiMahasiswa[2][1] = 82; `
+`        nilaiMahasiswa[2][2] = 89;`
+
+`        System.out.println("Laporan Nilai Mahasiswa 2026:");`
+`        for (int i = 0; i < nilaiMahasiswa.length; i++) {`
+`            System.out.print("Mahasiswa ke-" + (i + 1) + " (" + nilaiMahasiswa[i].length + " matkul): ");`
+`            for (int j = 0; j < nilaiMahasiswa[i].length; j++) {`
+`                System.out.print(nilaiMahasiswa[i][j] + " ");`
+`            }`
+`            System.out.println();`
+`        }`
+`    }`
+`}`
+
+
